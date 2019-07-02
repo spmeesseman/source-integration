@@ -329,7 +329,7 @@ class SourceSVNPlugin extends MantisSourcePlugin {
 
 		$t_svn_proc = proc_open(
 			$t_svn_cmd,
-			array( array( 'pipe', 'r' ), array( 'pipe', 'w' ), array( 'pipe', 'w' ) ),
+			array( array( 'pipe', 'r' ), array( 'pipe', 'w' ), array( 'pipe', 'a' ) ),
 			$t_pipes
 		);
 
